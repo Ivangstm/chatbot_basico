@@ -30,6 +30,11 @@ body {
    align-items: center;
 }
 
+.instrucciones{
+   color:white;
+   margin-top: 70px;
+}
+
 .logo {
    height: 50px;
    width: 50px;
