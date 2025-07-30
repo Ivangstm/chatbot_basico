@@ -10,10 +10,10 @@ function responder(mensaje) {
     Colombiano y adolecente Autonomo cuya vision es nutrirse de conocimiento.
     El sabra como sacarle provecho a sus saberes.`;
     if (mensaje.includes("fecha")) return `Fue creada el <em>29 de julio del 2025</em>`;
-     if (mensaje.includes("github")) return `<a href = "https://www.github.com/Ivangstm"> Click para ver el perfil del autor </a>`;
+     if (mensaje.includes("github")) return `<a class="githubDecoration" href = "https://www.github.com/Ivangstm"> Click para ver el perfil del autor </a>`;
 
     return `Soy un bot con limites de conversas. Estoy configurado para darte informacion establecida. <br>
-    > Si quieres saber el autor de este sitio web, pon "Autor" <br>
+    > Si quieres saber del autor de este sitio web, pon "Autor" <br>
     > Si quieres saber la fecha en la que se creo esta pagina, pon "fecha" <br>
     > Si quieres saber mas del creador, puedes poner "github" <br>`;
 }

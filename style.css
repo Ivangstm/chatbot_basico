@@ -138,6 +138,7 @@ body {
 
    display: flex;
    justify-content: center;
+   gap: 20px;
 }
 
 .chatOfBot,
@@ -162,3 +163,36 @@ body {
    margin-left: 10px;
    border-radius: 30px;
 }
+
+#input{
+   width: 90vh;
+   border-radius: 5px ;
+   font-family: Arial, Helvetica, sans-serif;
+   border: none;
+
+}
+
+.input button{
+   background-color: rgb(98, 95, 186);
+   color: white;
+   border-radius: 5px;
+   border: none;
+   box-shadow: 0 0 9px rgba(41, 36, 211, 0.5);
+   transition: 0.5s ease;
+}
+
+.input button:hover{
+   box-shadow: 5px 0 15px rgba(42, 36, 211, 0.739);
+}
+
+.githubDecoration{
+   font-weight: bold;
+   color: white;
+   transition: 0.5s ease;
+    text-shadow: 0 0 10px rgba(54, 48, 162, 0.253);
+}
+
+.githubDecoration:hover{
+   text-shadow: 0 0 25px rgb(25, 19, 146);
+}
+
