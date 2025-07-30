@@ -3,67 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bot Chat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!---- Header principal ---->
     <section class="header">
-    <header class="main-header">
-        <div class="container">
-            <div class="titulo">
-                <img src="./img/aetherion black.png" alt="" class="logo">
-                <h1>Aetherion</h1>
+        <header class="main-header">
+            <div class="container">
+                <div class="titulo">
+                    <img src="./img/aetherion black.png" alt="" class="logo">
+                    <h1>Aetherion</h1>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
     </section>
-        <div class="main-chat-content">
-         <aside class="esquina-chat">
-         <div class="chat-bot" id="chatBot">
-            <img src="./img/robot.svg" class="bot-icon">
-            <h3>Bot</h3>
-         </div>
-         </aside>
-         <section class="chats" id="chats">
-           <!-- 
-            <div class="togger-chat">
-                <div class="bar-header">
-                    <div class="nameCHat">
-                        <img src="./img/robot.svg" class="logoInChat">
-                        <h4>Bot</h4>
-                    </div>
-                    <div class="threePunts">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    
-                    </div>
-                </div>
 
-            <div class="chater" id="chater">
-
-                <div class="chatOfBot">
-                    <img class="logoOfBotChat" src="./img/robot.svg" alt="">
-                    <p><b>Hola Humano</b></p>
-                </div>
-
-                 <div class="chatOfMe">
-                    <p><b>Hola Robot</b></p>
-                      <img class="logoOfMeChat" src="./img/aetherion black.png" alt="">
-                </div>
-
+    <!---- Contenido principal con chat ---->
+    <div class="main-chat-content">
+        <aside class="esquina-chat">
+            <div class="chat-bot" id="chatBot">
+                <img src="./img/robot.svg" class="bot-icon">
+                <h3>Bot</h3>
             </div>
+        </aside>
 
-            <div class="input">
-            <input type="text" class="MSJ" id = "input">
-            <button class="enviar" onclick="enviar()">Enviar</button>
-            </div>
-
-
-            </div>
-    -->
+        <section class="chats" id="chats">
+            <!---- Aquí se insertará el chat dinámicamente ---->
         </section>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
