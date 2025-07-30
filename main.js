@@ -4,9 +4,18 @@ const chats = document.getElementById("chats");
 function responder(mensaje) {
     mensaje = mensaje.toLowerCase(); // <-- Aquí estaba el error antes (doble paréntesis)
 
-    if (mensaje.includes("hola")) return "Hola, ¿cómo vas?";
+    if (mensaje.includes("hola")) return "Hola, como estas?";
+    if (mensaje.includes("bien")) return "Me alegra mucho eso!";
+    if (mensaje.includes("autor")) return `Esta pagina fue creada por Ivan Andres castillo.
+    Colombiano y adolecente Autonomo cuya vision es nutrirse de conocimiento.
+    El sabra como sacarle provecho a sus saberes.`;
+    if (mensaje.includes("fecha")) return `Fue creada el <em>29 de julio del 2025</em>`;
+     if (mensaje.includes("github")) return `<a href = "https://www.github.com/Ivangstm"> Click para ver el perfil del autor </a>`;
 
-    return "No entendí.";
+    return `Soy un bot con limites de conversas. Estoy configurado para darte informacion establecida. <br>
+    > Si quieres saber el autor de este sitio web, pon "Autor" <br>
+    > Si quieres saber la fecha en la que se creo esta pagina, pon "fecha" <br>
+    > Si quieres saber mas del creador, puedes poner "github" <br>`;
 }
 
 function enviar() {
@@ -21,15 +30,14 @@ function enviar() {
     // Mensaje del usuario
     chater.innerHTML += ` 
         <div class="chatOfMe">
-            <img class="logoOfBotChat" src="./img/robot.svg" alt="">
-            <p><b>Tú:</b> ${mensaje}</p>
+            <p>${mensaje}</p>
         </div>`;
 
     // Respuesta del bot
     const respuesta = responder(mensaje);
     chater.innerHTML += `   
         <div class="chatOfBot">
-            <img class="logoOfBotChat" src="./img/robot.svg" alt="">
+            <img class="logoOfBotChat" src="./img/robot2.png" alt="">
             <p><b>Bot:</b> ${respuesta}</p>
         </div>`;
 
@@ -50,7 +58,7 @@ chatBot.addEventListener('click', () => {
             <!---- Barra superior ---->
             <div class="bar-header">
                 <div class="nameCHat">
-                    <img src="./img/robot.svg" class="logoInChat">
+                    <img src="./img/robot2.png" class="logoInChat">
                     <h4>Bot</h4>
                 </div>
                 <div class="threePunts">

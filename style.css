@@ -1,6 +1,7 @@
 body {
    margin: 0;
    padding: 0;
+    background-color: rgb(18, 17, 19);
 }
 
 .header {
@@ -12,7 +13,10 @@ body {
    background-color: rgb(31, 41, 41);
    width: 100%;
    color: white;
+   border-bottom: solid 1px #111;
+
 }
+
 
 .titulo {
    display: flex;
@@ -34,19 +38,21 @@ body {
 }
 
 .esquina-chat {
-   background-color: blueviolet;
+   background-color: rgb(18, 17, 19);
    padding: 15px;
    width: 30%;
    height: 50vh;
    max-width: 2200px;
+   border-bottom: dashed 1px #000000;
+   border-right: dashed 1px #333 ;
 }
 
 .chats {
-   background-color: yellowgreen;
+   background-color: rgb(31, 41, 41);
    width: 100%;
-   border: dashed 1px;
    position: relative;
    max-width: 2200px;
+
 }
 
 .main-chat-content {
@@ -57,7 +63,16 @@ body {
 .chat-bot {
    display: flex;
    align-items: center;
-   border: dashed 1px;
+   background-color: rgb(73, 73, 102);
+   border-radius: 15px;
+   box-shadow: 0 10px 19px rgba(80, 79, 114, 0.5);
+   cursor: pointer;
+   transition: 0.5s ease;
+}
+
+.chat-bot:hover{
+   background-color: rgb(94, 94, 185);
+   box-shadow: 0 0 12px rgba(41, 36, 211, 0.5);
 }
 
 .bot-icon {
@@ -69,7 +84,7 @@ body {
 
 .togger-chat {
    padding-bottom: 30px;
-   background-color: blanchedalmond;
+   background-color: rgb(17, 17, 19);
    width: 100%;
    height: 50vh;
    max-width: 2200px;
@@ -95,6 +110,7 @@ body {
    margin-left: 10px;
    margin-top: 10px;
    align-items: center;
+   color: white;
 }
 
 .threePunts {
@@ -106,20 +122,20 @@ body {
 .threePunts span {
    border-radius: 5px;
    padding: 3px;
-   background-color: black;
+   background-color: rgb(255, 255, 255);
 }
 
 .chater {
    padding: 20px;
-   border: dashed 1px;
    height: 27vh;
    margin-bottom: 10px;
-   background-color: aquamarine;
+   background-color: rgb(18, 18, 18);
    overflow-y: auto;
+   color: white;
 }
 
 .input {
-   border: dashed 1px #0000bb;
+
    display: flex;
    justify-content: center;
 }
@@ -128,7 +144,6 @@ body {
 .chatOfMe {
    display: flex;
    align-items: center;
-   border: dashed 1px #bb0000;
 }
 
 .chatOfMe {
